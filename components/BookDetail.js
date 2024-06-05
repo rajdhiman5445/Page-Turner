@@ -59,7 +59,7 @@ const BookDetail =()=>{
                         <h1><Link to={`/result/${thisBook.author_name}`}>{thisBook.author_name}</Link></h1>
                     </div>
                     <div className="stars">
-                    <Rating name="read-only" value={Number(thisBook.value)} precision={0.5} readOnly />
+                    {/* <Rating name="read-only" value={Number(thisBook.value)} precision={0.5} readOnly /> */}
                         <h2>{thisBook.year}</h2>
                     </div>
                     <div> 
