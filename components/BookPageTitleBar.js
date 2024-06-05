@@ -23,14 +23,16 @@ const BookPageTitleBar =() => {
                 /></Link>
             </div>
             <div>
-            <Link to="/search"><img src={icon} style={{width:"30px", cursor:"pointer", margin:"10px"}}
+            <Link to="/search">
+                <img src={icon} style={{width:"30px", cursor:"pointer", margin:"10px"}}
                 onMouseEnter={()=>{
                     setIcon(SearchOrange);
                 }}
                 onMouseOut={()=>{
                     setIcon(SearchWhite);
                 }}
-            /></Link>
+            />
+            </Link>
             </div>
         </div>
     )
