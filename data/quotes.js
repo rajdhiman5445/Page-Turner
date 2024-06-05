@@ -1,4 +1,4 @@
-quote = [
+const quote = [
     `"I think books are like people, in the sense that they’ll turn up in your life when you most need them." – Emma Thompson`,
     `"Books are a uniquely portable magic." – Stephen King, On Writing: A Memoir of the Craft`,
     `"Some books leave us free and some books make us free." – Ralph Waldo Emerson`,
