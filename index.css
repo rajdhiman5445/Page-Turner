@@ -1,0 +1,521 @@
+body {
+background-color: #161616;
+color: #E6DBC6;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+.title{
+    text-align: center;
+    justify-content: center;
+}
+
+.nav_bar{
+    border-bottom: 0.5px solid #E6DBC6;
+}
+
+.nav_items ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.nav_items ul li{
+    cursor: pointer;
+    font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color: #E6DBC6;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #d06832;
+}
+
+
+
+.nav_items ul li:hover{
+    color: #d06832;
+}
+
+.app_body{
+    padding: 2%;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+@keyframes appear{
+    from{
+        opacity: 0;
+
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.card_body_hidden{
+    opacity: 0;
+}
+
+.card_body{
+    width: 160px;
+    min-height: 300px;
+    padding: 1%;
+    border-radius: 5%;
+    cursor: pointer;
+    animation: appear 0.8s linear;
+}
+
+.animate{
+    animation: appear 1s linear;
+}
+
+.card_body:hover{
+    box-shadow: #d06832 0px 2px 10px 0px;
+    color: #d06832;
+
+}
+
+.horizontal_book_list{
+    justify-content:space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    transition: width 2s;
+}
+
+.cardImg{
+    width: 156.6px;
+    height: 219.2px;
+    border-radius: 5%;
+}
+
+
+.book_info{
+    flex-wrap: wrap;
+    text-align: center;
+    width: 160px;
+    padding: 0%;
+}
+
+.book_title{
+    padding-top: 7%;
+    padding-bottom: 8%;
+}
+
+.author_name{
+    font-size: small;
+}
+
+.main_book_page{
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+
+}
+
+.circle{
+    width: 480px;
+    height: 480px;
+    background-color: #d06832;
+    border-radius: 50%;
+    position: absolute;
+    left: 8%;
+    top: 20%;
+}
+
+.text_part_book_page{
+    position: absolute;
+    left: 48%;
+    right: 10%;
+}
+
+.text_part_book_page_hidden{
+    opacity: 0;
+}
+
+.main_book_title{
+    text-align: justify;
+    margin-top: 20%;
+    font-size: 25px;
+}
+
+.img_main_div{
+    position: absolute;
+    left: 12%;
+    top: 15%;
+}
+
+.img_main{
+    width: 36%;
+    border-radius: 2%;
+    box-shadow: #161616 0px 0px 18px 0px;
+}
+
+.btn_list{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.download_btn{
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    background-color: #d06832;
+    color: #E6DBC6;
+    font-weight: bolder;
+    cursor: pointer;
+    
+}
+
+.download_btn:hover{
+    background-color: #E6DBC6;
+    color:#d06832;
+}
+
+
+.main_about{
+    margin-top: 55%;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    align-items: center;
+    animation: appear 1s linear;
+}
+
+.main_about_hidden{
+    opacity: 0;
+}
+
+.main_about_head{
+    text-align: center;
+}
+
+.about_book{
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: large;
+}
+
+.end{
+    padding: 10%;
+}
+
+.more_book{
+    padding: 5%;
+}
+
+.text{
+    font-size: large;
+}
+
+.search_title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.title_main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-bar{
+    background-color: #161616;
+    border: 2px solid #E6DBC6;
+    width: 600px;
+    height: 40px;
+    border-radius: 10px;
+    color: #E6DBC6;
+    font-size: large;
+    padding: 8px;
+    margin: 5px;
+    outline: none;
+}
+
+.search-bar:focus{
+    border-color: #d06832;
+    color: #d06832;
+}
+
+
+.result-heading{
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+
+}
+
+.result-title{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.footer{
+    align-items: center;
+    text-align: center;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: italic;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.space{
+    margin: 20%;
+}
+
+.quotes-page{
+    margin: 10%;
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-size: 300%;
+    
+}
+
+.quotes-page:hover{
+    color: #d06832;
+}
+
+
+
+.quote_text{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+.quote_container{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.menu_button{
+    opacity: 0;
+}
+
+.nav_itemsactive ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.nav_itemsactive ul li{
+    cursor: pointer;
+    font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.genre{
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding: 2%;
+}
+
+
+
+.genre-item{
+    text-align: center;
+}
+
+.genre h1{
+    text-align: center;
+}
+
+
+@media (max-width: 1290px) {
+
+    .img_part_book_page{
+        justify-content: space-around;
+        margin-left: 5%;
+    }
+
+    
+    .img_main_div{
+        position: relative;
+        width: 50%;
+        justify-content: space-evenly;
+        display: flex;
+        align-items: center;
+        padding: 10%;
+        
+    }
+
+    .img_main{
+        width: 100%;
+        
+    }
+
+    .circle{
+        width: 0px;
+        height: 0px;
+        opacity: 0;
+    }
+
+    .btn_list{
+        display: block;
+    }
+
+    .download_btn{
+        width: 100%;
+        margin: 2%;
+    }
+
+    .text_part_book_page{
+        position: relative;
+        left: 25%;
+        width: 50%;
+        text-align: center;
+    }
+
+    .main_book_title{
+        margin-top: 5%;
+        text-align: center;
+    }
+
+    .main_about{
+        position: relative;
+        margin-top: 10%;
+    }
+    .search-bar{
+        width: 400px;
+    }
+
+    .quotes-page{
+        font-size: 250%;
+        font-weight: 800;
+    }
+
+    .menu_button{
+        opacity: 0;
+    }
+
+    .nav_itemsactive ul{
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: none;
+        text-decoration: none;
+    }
+
+    .nav_itemsactive ul li{
+        cursor: pointer;
+        font-family: "League Spartan", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+      text-decoration: none;
+    }
+
+}
+
+
+
+@media (max-width: 700px) {
+
+    #root{
+        width: 100%;
+    }
+
+    
+    .img_main_div{
+        position: relative;
+        width: 50%;
+        justify-content: space-evenly;
+    }
+
+    .circle{
+        width: 0px;
+        height: 0px;
+        opacity: 0;
+    }
+
+    .btn_list{
+        display: block;
+    }
+
+    .download_btn{
+        width: 100%;
+        margin: 2%;
+    }
+
+    .text_part_book_page{
+        position: relative;
+        justify-content: space-around;
+        width: 50%;
+        text-align: center;
+        font-size: smaller
+    }
+
+    .main_book_title{
+        margin-top: 5%;
+        text-align: center;
+        font-size: large;
+    }
+
+    .main_about{
+        position: relative;
+        margin-top: 10%;
+    }
+
+    .search-bar{
+        width: 200px;
+    }
+
+    .quotes-page{
+        padding: auto;
+        font-weight: 700;
+        font-size: 200%;
+        height: fit-content;
+    }
+
+    .nav_items ul{
+        display:contents;
+        text-align: center; 
+    }
+
+    .nav_items{
+        opacity: 0;
+        height: 0;
+    }
+
+
+
+    .nav_itemsactive ul{
+        display: contents;
+        list-style-type: none;
+        text-decoration: none;
+        text-align: center;
+        opacity: 1;
+    }
+
+
+    .menu_button{
+        opacity: 1;
+    }
+    
+}
+
