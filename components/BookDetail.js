@@ -112,6 +112,7 @@ const BookDetail =()=>{
         return(
             <>
             <BookPageTitleBar/>
+            <h5 className="load_msg">Connecting to the server, this may take a while.<br/> If the issue presist please reload the page.</h5>
             <Footer />
             </>
         )

@@ -283,6 +283,18 @@ a:hover{
     margin-right: 5%;
 }
 
+.load_msg{
+    align-items: center;
+    text-align: center;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: italic;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10%;
+}
+
 .space{
     margin: 20%;
 }
