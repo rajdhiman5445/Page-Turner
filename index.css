@@ -86,8 +86,10 @@ a:hover{
 }
 
 .shimmer_img{
-    padding: 10px;
-    width: 150px;
+    padding: 1%;
+    width: 160px;
+    min-height: 300px;
+    border-radius: 5%;
     
 }
 
