@@ -35,8 +35,11 @@ const BookDetail =()=>{
 
     const thisBook = bookInfo.find(book => book._id === thisBookId);
     const moreBook = bookInfo.filter(book => book._id !== thisBookId);
-
-
+    
+    const similarBook = bookInfo.filter(book => 
+        book._id !== thisBookId &&
+        book.genres.some(genre => thisBook.genres.includes(genre))
+      ).slice(0, 7);
 
     if (thisBook){
         return(
@@ -59,7 +62,7 @@ const BookDetail =()=>{
                         <h1><Link to={`/result/${thisBook.author_name}`}>{thisBook.author_name}</Link></h1>
                     </div>
                     <div className="stars">
-                    {/* <Rating name="read-only" defaultValue={Number(thisBook.value)} precision={0.5} readOnly /> */}
+                    <Rating name="read-only" defaultValue={Number(thisBook.value)} precision={0.5} readOnly />
                         <h2>{thisBook.year}</h2>
                     </div>
                     <div> 
@@ -94,7 +97,7 @@ const BookDetail =()=>{
                 <div className="block-heading">
                 <h2>More Like This</h2>
                 <div className="horizontal_book_list">
-                {moreBook.map((books)=>(
+                {similarBook.map((books)=>(
                     <Card key={books._id} id={books._id} img={books.img_url} title={books.book_title} author={books.author_name}/>
                    
                 ))}

@@ -9,6 +9,7 @@ import BookDetail from "./components/BookDetail"
 import SearchShown from "./components/SearchShown"
 import Footer from "./components/Footer"
 import QuotesPage from "./components/QuotesPage"
+import AllBooks from "./components/AllBooks"
 
 
 
@@ -48,7 +49,7 @@ const appRouter = createBrowserRouter([
             },
             {
                 path:"/bookseries",
-                element:<Body/>
+                element:<AllBooks/>
             },
             
             

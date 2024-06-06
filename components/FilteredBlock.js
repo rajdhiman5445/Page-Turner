@@ -17,7 +17,11 @@ const FilteredBlock =({list})=>{
     }, []);
 
     
-    const FilteredBook = booksInfo.filter(book  => book.list===list);
+    //const FilteredBook = booksInfo.filter(book  => book.list===list);
+
+    const FilteredBook = booksInfo.filter(book =>
+        book.list.some(l => l === list) // Assuming 'list' is the passed value
+      );
 
     if (FilteredBook.length === 0){
         return(

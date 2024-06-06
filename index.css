@@ -73,7 +73,7 @@ a:hover{
     width: 160px;
     min-height: 300px;
     padding: 1%;
-    margin: 1%;
+    margin: 4%;
     border-radius: 5%;
     cursor: pointer;
     animation: appear 0.8s linear;
@@ -113,7 +113,18 @@ a:hover{
     justify-content:space-evenly;
     display: flex;
     flex-wrap: wrap;
-    transition: width 2s;
+    margin: 1%;
+}
+
+.all_books{
+    text-align: center;
+}
+
+.all_book_list{
+    justify-content:space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3%;
 }
 
 .cardImg{
