@@ -19,7 +19,12 @@ const FilteredBlock =({list})=>{
     
     const FilteredBook = booksInfo.filter(book  => book.list===list);
 
-    
+    if (FilteredBook.length === 0){
+        return(
+            <Shimmer/>
+        )
+    }
+    else{
         return(
             <>
             <div className="block-heading">
@@ -33,6 +38,9 @@ const FilteredBlock =({list})=>{
     
             </>
         )
+    }
+    
+        
 
     
 }

@@ -18,28 +18,24 @@ const Block =()=>{
 
     if (booksInfo.length === 0){
         return(
-            <Shimmer/>
+        <Shimmer/>
         )
     }
     else{
-
-        return(
-            <>
-            <div className="block-heading">
-                <h2>Best Sellers You Can't Miss</h2>
-                <div className="horizontal_book_list">
-                    {booksInfo.map((books)=>(
-                        <Card key={books._id} id={books._id} img={books.img_url} title={books.book_title} author={books.author_name} />
-                    ))}
-                </div>
+    return(
+        <>
+        <div className="block-heading">
+            <h2>Best Sellers You Can't Miss</h2>
+            <div className="horizontal_book_list">
+                {booksInfo.map((books)=>(
+                    <Card key={books._id} id={books._id} img={books.img_url} title={books.book_title} author={books.author_name} />
+                ))}
             </div>
-            </>
-            )
-
+        </div>
+        </>
+        )
     }
-    
-    
-    
+
     
 }
 
