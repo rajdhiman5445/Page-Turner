@@ -73,6 +73,7 @@ a:hover{
     width: 160px;
     min-height: 300px;
     padding: 1%;
+    margin: 1%;
     border-radius: 5%;
     cursor: pointer;
     animation: appear 0.8s linear;
@@ -316,6 +317,7 @@ a:hover{
 
 .msg{
     margin-top: 12%;
+    
 }
 
 .space{
