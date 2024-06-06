@@ -26,10 +26,6 @@ const Shimmer = ()=>{
                 <div className="shimmer_card">
                 <img src={load} className="shimmer_img"/>
                 </div>
-                <div className="shimmer_card">
-                <img src={load} className="shimmer_img"/>
-                </div>
-                
                 
             
             </div>
