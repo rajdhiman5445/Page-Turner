@@ -112,6 +112,7 @@ const BookDetail =()=>{
         return(
             <>
             <BookPageTitleBar/>
+            <h3 className="load_msg">Hold tight, a new adventure is on the way!</h3>
             <h4 className="load_msg">Connecting to the server, this may take a while.<br/> If the issue presist please reload the page.</h4>
             <Footer />
             </>
