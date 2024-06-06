@@ -78,6 +78,19 @@ a:hover{
     animation: appear 0.8s linear;
 }
 
+.shimmer_ui{
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.shimmer_img{
+    padding: 10px;
+    width: 150px;
+    
+}
+
 .animate{
     animation: appear 1s linear;
 }
@@ -292,7 +305,7 @@ a:hover{
     font-style: italic;
     margin-left: 5%;
     margin-right: 5%;
-    margin-top: 10%;
+    margin-top: 12%;
 }
 
 .space{

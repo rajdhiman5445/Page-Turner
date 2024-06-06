@@ -4,7 +4,7 @@ import LogoOrange from "../files/page_turner_logo_orange.svg"
 import { Link } from "react-router-dom";
 import SearchWhite from "../files/search-white.svg"
 import SearchOrange from "../files/search-orange.svg"
-import quote from "../data/quotes";
+
 
 const BookPageTitleBar =() => {
     const [img, setImg] = useState(Logo);
