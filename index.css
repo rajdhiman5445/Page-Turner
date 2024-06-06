@@ -85,11 +85,16 @@ a:hover{
     
 }
 
-.shimmer_img{
-    padding: 1%;
+.shimmer_card{
     width: 160px;
     min-height: 300px;
+    padding: 1%;
     border-radius: 5%;
+}
+
+.shimmer_img{
+    width: 156.6px;
+    height: 219.2px;
     
 }
 
