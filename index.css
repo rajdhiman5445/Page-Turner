@@ -180,7 +180,8 @@ a:hover{
 }
 
 .img_main{
-    width: 36%;
+    width: 350px;
+    height: 540px;
     border-radius: 2%;
     box-shadow: #161616 0px 0px 18px 0px;
 }
@@ -411,6 +412,7 @@ a:hover{
 
     .img_main{
         width: 100%;
+        height: auto;
         
     }
 
