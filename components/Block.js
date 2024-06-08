@@ -28,7 +28,7 @@ const Block =({list})=>{
     }
     
 
-    if (FilteredBook.length !== 0){
+    if (FilteredBook.length === 0){
         return(<div>
         <div className="connect_msg">
             <div>Hold tight, the library of imagination is opening...</div>
