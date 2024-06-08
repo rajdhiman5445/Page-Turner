@@ -15,6 +15,7 @@ const AllBooks =()=>{
             })
             .catch(err => console.log(err));
     }, []);
+    const length = booksInfo.length;
 
     if (booksInfo.length === 0){
         return(
@@ -26,6 +27,8 @@ const AllBooks =()=>{
         <>
         <div className="app_body">
            <h2 className="all_books">All Books</h2>
+           <div className="connect_msg">Currently {length} books are available <br/> 
+           We are trying hard to add more books</div>
             <div className="all_book_list">
                 {booksInfo.map((books)=>(
                     <Card key={books._id} id={books._id} img={books.img_url} title={books.book_title} author={books.author_name} />
