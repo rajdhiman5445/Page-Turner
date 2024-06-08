@@ -7,7 +7,7 @@ const Body = () => {
         return (
             <>
             <div className="app_body">
-                <FilteredBlock list="Best Sellers You Can't Miss"/>
+                <Block list="Best Sellers You Can't Miss"/>
                 <FilteredBlock list="Must-Read Thriller Hits"/>
                 <FilteredBlock list="Top Non-Fiction Books"/>
                 <FilteredBlock list="Most Popular Fiction Books"/>

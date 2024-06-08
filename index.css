@@ -332,6 +332,31 @@ a:hover{
     
 }
 
+.connect_msg{
+    align-items: center;
+    text-align: center;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: italic;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.know_more{
+    color: #d06832;
+    cursor: pointer;
+}
+
+.show_text{
+    opacity: 1;
+}
+
+.no_text{
+    height: 0;
+    opacity: 0;
+}
+
 .space{
     margin: 20%;
 }
@@ -469,6 +494,10 @@ a:hover{
 
     .menu_button{
         opacity: 0;
+    }
+
+    .nav_items ul{
+        pointer-events: none;
     }
 
     .nav_itemsactive ul{

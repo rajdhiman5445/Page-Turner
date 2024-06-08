@@ -4,9 +4,10 @@ import { useEffect, useState } from "react";
 import server_url from "../data/url";
 import Shimmer from "./Shimmer";
 
-const Block =()=>{
+const Block =({list})=>{
 
     const [booksInfo, setBooksInfo] = useState([]);
+    const [showMore, setShowMore] = useState(false);
 
     useEffect(() => {
         axios.get(server_url)
@@ -16,18 +17,44 @@ const Block =()=>{
             .catch(err => console.log(err));
     }, []);
 
-    if (booksInfo.length === 0){
-        return(
+    const FilteredBook = booksInfo.filter(book =>
+        book.list.some(l => l === list) // Assuming 'list' is the passed value
+      );
+    let text = "Why is it taking too long?"
+    if (!showMore) {
+        text = "Why is it taking too long?"}
+    else{
+        text = "Ok, take your time!"
+    }
+    
+
+    if (FilteredBook.length !== 0){
+        return(<div>
+        <div className="connect_msg">
+            <div>Hold tight, the library of imagination is opening...</div>
+        <br/>
+        <div className="know_more" onClick={()=>{setShowMore((prev)=>!prev)}}>{text}</div>
+        <br/>
+        <div className={`${showMore?"show":"no"}`+"_text"}>
+        Hi there,
+    <p>
+      Our servers are currently experiencing high traffic, and it may take up to 2 minutes to connect. In some cases, it might take up to 5 minutes or longer. Please try reloading the page or check back in a few minutes.
+    </p>
+    <p>Thank you for your patience.</p> 
+            </div>
+        </div>
+        
         <Shimmer/>
+        </div>
         )
     }
     else{
     return(
         <>
         <div className="block-heading">
-            <h2>Best Sellers You Can't Miss</h2>
+            <h2>{list}</h2>
             <div className="horizontal_book_list">
-                {booksInfo.map((books)=>(
+                {FilteredBook.map((books)=>(
                     <Card key={books._id} id={books._id} img={books.img_url} title={books.book_title} author={books.author_name} />
                 ))}
             </div>
