@@ -8,6 +8,7 @@ const Block =({list})=>{
 
     const [booksInfo, setBooksInfo] = useState([]);
     const [showMore, setShowMore] = useState(false);
+    const [long, setLong] = useState(false);
 
     useEffect(() => {
         axios.get(server_url)
@@ -16,6 +17,12 @@ const Block =({list})=>{
             })
             .catch(err => console.log(err));
     }, []);
+
+    useEffect(()=>{
+        const timer = setTimeout(()=>{
+            setLong(true);
+        }, 10000);
+    },[])
 
     const FilteredBook = booksInfo.filter(book =>
         book.list.some(l => l === list) // Assuming 'list' is the passed value
@@ -30,7 +37,8 @@ const Block =({list})=>{
 
     if (FilteredBook.length === 0){
         return(<div>
-        <div className="connect_msg">
+            
+        <div className={long?"connect_msg":"no_msg"}>
             <div>Hold tight, the library of imagination is opening...</div>
         <br/>
         <div className="know_more" onClick={()=>{setShowMore((prev)=>!prev)}}>{text}</div>
