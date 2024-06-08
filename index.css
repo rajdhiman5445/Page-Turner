@@ -444,8 +444,8 @@ a:hover{
 
     .text_part_book_page{
         position: relative;
-        left: 25%;
-        width: 50%;
+        left: 10%;
+        width: 80%;
         text-align: center;
     }
 
@@ -521,9 +521,10 @@ a:hover{
     .text_part_book_page{
         position: relative;
         justify-content: space-around;
-        width: 50%;
+        width: 80%;
         text-align: center;
-        font-size: smaller
+        font-size: smaller;
+        left:10%;
     }
 
     .main_book_title{
