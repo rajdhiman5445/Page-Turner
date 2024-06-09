@@ -376,12 +376,11 @@ a:hover{
     font-optical-sizing: auto;
     font-weight: 800;
     font-size: 300%;
+    color: #d06832;
     
 }
 
-.quotes-page:hover{
-    color: #d06832;
-}
+
 
 
 
@@ -433,12 +432,55 @@ a:hover{
     text-align: center;
 }
 
+@media (max-width: 1400px){
+    .circle{
+        width: 400px;
+        height: 400px;
+    }
 
-@media (max-width: 1290px) {
+    .img_main{
+        width: 300px;
+        height: 450px;
+    }
+
+    .text_part_book_page{
+        font-size: smaller;
+    }
+
+    .main_book_title{
+        font-size: 18px;
+    }
+
+    .download_btn{
+        width: 180px;
+        height: 45px;
+    }
+}
+
+@media (max-width: 1290px){
+    .download_btn{
+        width: 160px;
+        height: 45px;
+    }
+}
+
+@media (max-width: 1200px){
+    .download_btn{
+        width: 150px;
+        height: 45px;
+    }
+}
+
+
+@media (max-width: 900px) {
 
     .img_part_book_page{
         justify-content: space-around;
         margin-left: 5%;
+    }
+
+    .quotes-page{
+    margin-top: 35%;
     }
 
     
@@ -458,6 +500,8 @@ a:hover{
         
     }
 
+    
+
     .circle{
         width: 0px;
         height: 0px;
@@ -470,6 +514,7 @@ a:hover{
 
     .download_btn{
         width: 100%;
+        height: 50px;
         margin: 2%;
     }
 

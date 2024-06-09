@@ -71,7 +71,7 @@ const BookDetail =()=>{
                     <div className="btn_list">
 
                         <Link to={`/readbook/`+`${thisBook.url}`+`${thisBook.token}`}><Buttons text="Read Now"/></Link>
-                        <Link to={thisBook.epub}><Buttons text="Download Epub"/></Link>
+                        <Link to={thisBook.epub}><Buttons text="Download EPUB"/></Link>
                         <Link to={thisBook.pdf}><Buttons text="Download PDF"/></Link>
                     </div>
                 </div>

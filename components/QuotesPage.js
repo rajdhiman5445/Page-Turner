@@ -8,12 +8,12 @@ const QuotesPage = () => {
 
 
     return(
-        <div >
+        <div onClick={()=>{
+            setClicked(val => !val);
+        }} style={{width:"100%",height:"100vh"}}>
             <BookPageTitleBar/>
             <div className="quote_container" >
-            <div className="quotes-page" onClick={()=>{
-            setClicked(val => !val);
-        }}>
+            <div className="quotes-page" >
             <Quote/>
             <div className="space" > </div>
             </div>

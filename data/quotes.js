@@ -33,7 +33,6 @@ const quote = [
     `“There is some good in this world, and it’s worth fighting for.” — J.R.R. Tolkien, The Two Towers`,
     `“I am no bird; and no net ensnares me: I am a free human being with an independent will, which I now exert to leave you.” — Charlotte Brontë, Jane Eyre`,
     `“Beware; for I am fearless, and therefore powerful.” — Mary Shelley, Frankenstein`,
-    `“I wanted you to see what real courage is, instead of getting the idea that courage is a man with a gun in his hand. It’s when you know you’re licked before you begin but you begin anyway and you see it through no matter what. You rarely win, but sometimes you do.” — Harper Lee, To Kill a Mockingbird`,
     `“The only way out of the labyrinth of suffering is to forgive.” ― John Green, Looking for Alaska`,
     `“Love is or it ain’t. Thin love ain’t love at all.” — Toni Morrison, Beloved`,
     `“We accept the love we think we deserve.” ― Stephen Chbosky, The Perks of Being a Wallflower`,
