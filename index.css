@@ -472,7 +472,7 @@ a:hover{
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
 
     .img_part_book_page{
         justify-content: space-around;

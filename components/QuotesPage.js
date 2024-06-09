@@ -1,6 +1,6 @@
 import BookPageTitleBar from "./BookPageTitleBar";
 import Quote from "./Quote";
-import { useState, useEffect} from "react";
+import { useState } from "react";
 
 const QuotesPage = () => {
 
