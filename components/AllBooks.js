@@ -17,6 +17,8 @@ const AllBooks =()=>{
     }, []);
     const length = booksInfo.length;
 
+    const booksInfo2 = booksInfo.sort((a,b) => a.book_title.localeCompare(b.book_title));
+
     if (booksInfo.length === 0){
         return(
         <Shimmer/>
@@ -30,7 +32,7 @@ const AllBooks =()=>{
            <div className="connect_msg">Currently {length} books are available <br/> 
            We are trying hard to add more books</div>
             <div className="all_book_list">
-                {booksInfo.map((books)=>(
+                {booksInfo2.map((books)=>(
                     <Card key={books._id} id={books._id} img={books.img_url} title={books.book_title} author={books.author_name} />
                 ))}
             </div>
