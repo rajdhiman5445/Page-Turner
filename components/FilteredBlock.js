@@ -19,9 +19,11 @@ const FilteredBlock =({list})=>{
     
     //const FilteredBook = booksInfo.filter(book  => book.list===list);
 
-    const FilteredBook = booksInfo.filter(book =>
+    const FilteredBook2 = booksInfo.filter(book =>
         book.list.some(l => l === list) // Assuming 'list' is the passed value
       );
+
+    const FilteredBook = FilteredBook2.sort((a,b) => a.book_title.localeCompare(b.book_title));
 
     if (FilteredBook.length === 0){
         return(

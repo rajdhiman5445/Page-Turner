@@ -3,6 +3,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import server_url from "../data/url";
 import Shimmer from "./Shimmer";
+import { Link } from "react-router-dom";
 
 const Block =({list})=>{
 
@@ -13,7 +14,7 @@ const Block =({list})=>{
     useEffect(() => {
         axios.get(server_url)
             .then(response => {
-                setBooksInfo(response.data); // Access response.data
+                setBooksInfo(response.data); 
             })
             .catch(err => console.log(err));
     }, []);
@@ -24,9 +25,14 @@ const Block =({list})=>{
         }, 10000);
     },[])
 
-    const FilteredBook = booksInfo.filter(book =>
-        book.list.some(l => l === list) // Assuming 'list' is the passed value
+    const FilteredBook2 = booksInfo.filter(book =>
+        book.list.some(l => l === list) 
       );
+
+
+    const FilteredBook = FilteredBook2.sort((a,b) => a.book_title.localeCompare(b.book_title))
+    
+
     let text = "Why is it taking too long?"
     if (!showMore) {
         text = "Why is it taking too long?"}
@@ -46,8 +52,9 @@ const Block =({list})=>{
         <div className={`${showMore?"show":"no"}`+"_text"}>
         Hi there,
     <p>
-      Our servers are currently experiencing high traffic, and it may take up to 2 minutes to connect. In some cases, it might take up to 5 minutes or longer. Please try reloading the page or check back in a few minutes.
+      Our servers are currently experiencing high traffic, and it may take up to <b>2 minutes</b> to connect. In some cases, it might take up to <b>5 minutes or longer</b>. Please try reloading the page or check back in a few minutes.
     </p>
+    <p>For faster response, you can also try loading our <span><Link to="https://pageturnerserver.onrender.com/getInfo" target="_blank" style={{color:"#d06832"}}>server page</Link></span>.</p>
     <p>Thank you for your patience.</p> 
             </div>
         </div>

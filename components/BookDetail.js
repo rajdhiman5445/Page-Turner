@@ -18,7 +18,9 @@ const BookDetail =()=>{
 
     const [bookInfo, setBooksInfo] = useState([])
     const [thisBookId, setThisBookId] = useState();
-    
+    const [loading, setLoading] = useState(false);
+
+
     
     // make the api call to fetch data
     useEffect(() => {
@@ -34,12 +36,36 @@ const BookDetail =()=>{
     }, [params.id]);
 
     const thisBook = bookInfo.find(book => book._id === thisBookId);
-    const moreBook = bookInfo.filter(book => book._id !== thisBookId);
     
     const similarBook = bookInfo.filter(book => 
         book._id !== thisBookId &&
         book.genres.some(genre => thisBook.genres.includes(genre))
-      ).slice(0, 7);
+      );
+
+    function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+    }
+
+    
+
+    const moreLikeThis = shuffleArray(similarBook).slice(0, 7);
+
+    if(loading){
+        return(
+            <>
+            <BookPageTitleBar/>
+            <div className="msg">
+            <h3 className="load_msg">Hang on, magic is just a moment away!</h3>
+            <h4 className="load_msg">Connecting to the server, this may take a while.<br/> If the issue presist please reload the page.</h4>
+            </div>
+            <Footer />
+            </>
+        )
+    }
 
     if (thisBook){
         return(
@@ -95,11 +121,10 @@ const BookDetail =()=>{
 
 <div className="more_book">
                 <div className="block-heading">
-                <h2>More Like This</h2>
+                <h2>Other Books You’ll Love</h2>
                 <div className="horizontal_book_list">
-                {similarBook.map((books)=>(
-                    <Card key={books._id} id={books._id} img={books.img_url} title={books.book_title} author={books.author_name}/>
-                   
+                {moreLikeThis.map((books)=>(
+                    <Card key={books._id} id={books._id} img={books.img_url} title={books.book_title} author={books.author_name} setLoading={setLoading}/>
                 ))}
             </div>
         </div>

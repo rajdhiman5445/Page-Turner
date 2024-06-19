@@ -16,6 +16,7 @@ body::-webkit-scrollbar {
     border-bottom: 0.5px solid #E6DBC6;
 }
 
+
 .nav_items ul{
     display: flex;
     justify-content: space-evenly;
