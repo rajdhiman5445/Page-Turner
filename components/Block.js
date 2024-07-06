@@ -52,10 +52,9 @@ const Block =({list})=>{
         <div className={`${showMore?"show":"no"}`+"_text"}>
         Hi there,
     <p>
-      Our servers are currently experiencing high traffic, and it may take up to <b>2 minutes</b> to connect. In some cases, it might take up to <b>5 minutes or longer</b>. Please try reloading the page or check back in a few minutes.
+      Our servers are currently experiencing high traffic, and it may take up to <b>1 minutes</b> to connect. Please try reloading the page or check back in a few minutes.
     </p>
-    <p>For faster response, you can also try loading our <span><Link to="https://pageturnerserver.onrender.com/getInfo" target="_blank" style={{color:"#d06832"}}>server page</Link></span>.</p>
-    <p>Thank you for your patience.</p> 
+   <p>Thank you for your patience.</p> 
             </div>
         </div>
         
