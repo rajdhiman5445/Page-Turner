@@ -3,7 +3,6 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import server_url from "../data/url";
 import Shimmer from "./Shimmer";
-import { Link } from "react-router-dom";
 
 const Block =({list})=>{
 
