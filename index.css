@@ -12,6 +12,11 @@ body::-webkit-scrollbar {
     justify-content: center;
 }
 
+.read-page{
+    background-color: #161616;
+    color: #E6DBC6;
+}
+
 .nav_bar{
     border-bottom: 0.5px solid #E6DBC6;
 }
