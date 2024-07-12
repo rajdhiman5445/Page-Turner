@@ -2,6 +2,8 @@ import React, { useEffect, useRef, useState } from 'react';
 import { ReactReader, ReactReaderStyle } from 'react-reader';
 import { useParams } from 'react-router-dom';
 import useLocalStorageState from 'use-local-storage-state';
+import Logo from "../files/page_turner_logo.svg";
+import { Link } from 'react-router-dom';
 
 function updateTheme(rendition, theme) {
   const themes = rendition.themes;
@@ -11,6 +13,11 @@ function updateTheme(rendition, theme) {
       themes.override('background', '#161616');
       break;
     }
+    case 'light': {
+      themes.override('color', '#000')
+      themes.override('background', '#fff')
+      break
+    }
     default:
       break;
   }
@@ -18,9 +25,8 @@ function updateTheme(rendition, theme) {
 
 const Read = () => {
   const params = useParams();
- // const [location, setLocation] = useState(null);
   const rendition = useRef(undefined);
-  const [theme] = useState('dark');
+  const [theme, setTheme] = useState('dark');
 
   useEffect(() => {
     if (rendition.current) {
@@ -28,13 +34,18 @@ const Read = () => {
     }
   }, [theme]);
 
-  const locationChanged = epubcfi => {
-    setLocation(epubcfi);
-  };
 
   const [location, setLocation] = useLocalStorageState('persist-location', {
     defaultValue: 0,
   });
+
+  const lightReaderTheme = {
+    ...ReactReaderStyle,
+    readerArea: {
+      ...ReactReaderStyle.readerArea,
+      transition: undefined,
+    },
+  }
 
   const darkReaderTheme = {
     ...ReactReaderStyle,
@@ -73,18 +84,31 @@ const Read = () => {
     },
   }
 
+  let text;
+  if (theme === 'dark'){
+    text = "Switch to Light Mode"
+  } else{
+    text = "Switch to Dark Mode"
+  }
+
   return (
     <div className='read-page' style={{ height: '100vh', }}>
+     
       <ReactReader
         url={`https://firebasestorage.googleapis.com/v0/b/ebooks5445.appspot.com/o/${params.url}?alt=media&token=${params.token}`}
         location={location}
         locationChanged={(loc) => setLocation(loc)}
-        readerStyles={darkReaderTheme}
+        readerStyles={theme === 'dark' ? darkReaderTheme : lightReaderTheme}
         getRendition={_rendition => {
           updateTheme(_rendition, theme);
           rendition.current = _rendition;
         }}
       />
+       <div className='read-btn'>
+        <Link to="/"><img src={Logo} style={{width:"50px", paddingTop:"4px"}} /></Link>
+        <div className='theme-btn' style={{cursor:"pointer"}} onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>{`${text}`}</div></div>
+     
+       
     </div>
   );
 };
