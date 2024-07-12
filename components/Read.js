@@ -1,9 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { ReactReader, ReactReaderStyle } from 'react-reader';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import useLocalStorageState from 'use-local-storage-state';
 import Logo from "../files/page_turner_logo.svg";
 import { Link } from 'react-router-dom';
+
+
 
 function updateTheme(rendition, theme) {
   const themes = rendition.themes;
@@ -33,6 +35,8 @@ const Read = () => {
       updateTheme(rendition.current, theme);
     }
   }, [theme]);
+
+  const navigate = useNavigate();
 
 
   const [location, setLocation] = useLocalStorageState('persist-location', {
@@ -86,9 +90,9 @@ const Read = () => {
 
   let text;
   if (theme === 'dark'){
-    text = "Switch to Light Mode"
+    text = "Light"
   } else{
-    text = "Switch to Dark Mode"
+    text = "Dark"
   }
 
   return (
@@ -105,6 +109,7 @@ const Read = () => {
         }}
       />
        <div className='read-btn'>
+        <div className='theme-btn' onClick={()=>{navigate(-1)}}>Back</div>
         <Link to="/"><img src={Logo} style={{width:"50px", paddingTop:"4px"}} /></Link>
         <div className='theme-btn' style={{cursor:"pointer"}} onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>{`${text}`}</div></div>
      

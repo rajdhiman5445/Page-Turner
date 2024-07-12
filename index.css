@@ -26,6 +26,7 @@ body::-webkit-scrollbar {
 .theme-btn{
     padding-top: 20px;
     padding-right: 1%;
+    cursor: pointer;
     font-family: "League Spartan", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
