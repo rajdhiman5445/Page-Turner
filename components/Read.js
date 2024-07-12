@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { ReactReader, ReactReaderStyle } from 'react-reader';
 import { useParams } from 'react-router-dom';
+import useLocalStorageState from 'use-local-storage-state';
 
 function updateTheme(rendition, theme) {
   const themes = rendition.themes;
@@ -17,7 +18,7 @@ function updateTheme(rendition, theme) {
 
 const Read = () => {
   const params = useParams();
-  const [location, setLocation] = useState(null);
+ // const [location, setLocation] = useState(null);
   const rendition = useRef(undefined);
   const [theme] = useState('dark');
 
@@ -30,6 +31,10 @@ const Read = () => {
   const locationChanged = epubcfi => {
     setLocation(epubcfi);
   };
+
+  const [location, setLocation] = useLocalStorageState('persist-location', {
+    defaultValue: 0,
+  });
 
   const darkReaderTheme = {
     ...ReactReaderStyle,
@@ -73,7 +78,7 @@ const Read = () => {
       <ReactReader
         url={`https://firebasestorage.googleapis.com/v0/b/ebooks5445.appspot.com/o/${params.url}?alt=media&token=${params.token}`}
         location={location}
-        locationChanged={locationChanged}
+        locationChanged={(loc) => setLocation(loc)}
         readerStyles={darkReaderTheme}
         getRendition={_rendition => {
           updateTheme(_rendition, theme);
