@@ -10,6 +10,7 @@ import SearchShown from "./components/SearchShown"
 import Footer from "./components/Footer"
 import QuotesPage from "./components/QuotesPage"
 import AllBooks from "./components/AllBooks"
+import HeroPage from "./components/HeroPage"
 
 
 
@@ -56,6 +57,10 @@ const appRouter = createBrowserRouter([
             
         ],
         errorElement:<Error/>,
+    },
+    {
+        path:"/home",
+        element:<HeroPage/>,
     },
     {
         path:"/bookinfo/:id",

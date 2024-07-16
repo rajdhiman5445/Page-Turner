@@ -42,6 +42,7 @@ const Read = () => {
   const [location, setLocation] = useLocalStorageState('persist-location', {
     defaultValue: 0,
   });
+  
 
   const lightReaderTheme = {
     ...ReactReaderStyle,

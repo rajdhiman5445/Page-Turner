@@ -16,6 +16,7 @@ const NavBar = () => {
             
             <div className={"nav_items" + `${clicked ? "active" :"" }`}>
             <ul>
+                <li><Link to="/home">Home</Link></li>
                 <li><Link to="/books">Books</Link></li>
                 <li><Link to="/bookseries">Book Series</Link></li>
                 <li><Link to="/quotes">Quotes</Link></li>

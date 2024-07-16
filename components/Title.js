@@ -16,7 +16,7 @@ const Title =() => {
         
         <div className="title">
             <div>
-                <Link to="/">
+                <Link to="/home">
                 <img src={img} style={{width:"100px", alignItems:"center", cursor:"pointer"}}
                 onMouseEnter={()=>{
                     setImg(LogoOrange);
