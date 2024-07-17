@@ -41,7 +41,7 @@ const HeroFour = () => {
       delay: 0.5,
       y: 0,
       scrollTrigger:{
-        trigger:"#four-two",
+        trigger:"#four-one",
         start:"top bottom",
         end:"top 20%",
         scrub: true,
@@ -55,6 +55,7 @@ const HeroFour = () => {
   return (
     <>
     <div className='hero-four-page'>
+      <div className='orange-space'> </div>
         <div id="four-one" className='four-main-text'>
             <h1>Great reading experience,<br/> whatever device you are on.</h1>
         </div>

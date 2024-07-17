@@ -101,7 +101,8 @@
 }
 
 .hero-four-page{
-    height: 800px;
+    height: 900px;
+    background-color: #D06832;
 
 }
 
@@ -137,14 +138,18 @@
 
 
 .four-main-text{
-    color: #D06832;
+    color: #161616;
     font-size: 30px;
     margin-left: 5%;
     margin-right: 5%;
-    margin-top: 5%;
     margin-bottom: 0;
-    translate: 0 -100;
+    translate: 0 -80;
     opacity: 0;
+}
+
+.orange-space{
+    height: 50px;
+
 }
 
 .five-main-text{
@@ -442,6 +447,6 @@
     }
 
     .hero-four-page{
-        height: 600px;
+        height: 800px;
     }
 }
