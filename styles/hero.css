@@ -12,7 +12,7 @@
     font-optical-sizing: auto;
     font-style: normal;
     text-decoration: none;
-    margin: 2%;
+    margin: 0;
     padding: 0;
 }
 
@@ -320,6 +320,10 @@
 
     .three-text-two{
         font-size: 20px;
+    }
+
+    .head-one{
+        margin: 2%;
     }
 
     .hero-one{
