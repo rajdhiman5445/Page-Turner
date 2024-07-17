@@ -51,7 +51,7 @@ const HeroPage = () => {
       <h1 id='head-one' className='main-head'>Looking for your next <br/>great read?</h1>
       <div className='hero-one'>
         <div id="cta" className='hero-one-text'><h3>Make yourself <br/>at home!</h3>
-        <Link to="/books"><div className='btn-explore'><Buttons text={'Explore Books'}/></div></Link>
+        <a href="#two"><div className='btn-explore'><Buttons text={'Get Hightlights'}/></div></a>
         </div>
         <div  className='main-img-div'><img src={MainImg} id="one-img" className='main-img' /></div>
         
