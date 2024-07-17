@@ -47,7 +47,7 @@ const HeroThree = () => {
     <>
     <div className='hero-three-page' >
         <div id="text-three" className='hero-three-text' >
-            <div  className='three-text-one'><h2>Pick you next<br/>
+            <div  className='three-text-one'><h2>Pick your next<br/>
                 read from a large <br/>
                 collections <br/>
                 of books.<br/>
