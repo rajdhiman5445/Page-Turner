@@ -96,7 +96,7 @@
 .img-phone{
     margin-right: 6px;
     opacity: 0;
-    translate: 0 80;
+    translate: 0 150;
  
 }
 
@@ -178,6 +178,57 @@
     position: relative;
     height: 100%;   
 }
+
+@media (max-width: 1300px){
+    .five-main-text{
+        font-size: 20px;
+    }
+
+    .five-img{
+        width: 50%;
+    }
+
+    .hero-four-text{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 1200px){
+    .five-main-text{
+        font-size: 20px;
+    }
+
+    .five-img{
+        width: 50%;
+    }
+
+    .hero-four-text{
+        font-size: 25px;
+    }
+
+    .img-phone{
+        margin-top: 10%;
+    }
+
+    .hero-three-text{
+        font-size: 30px;
+        margin-top: 18%;
+    }
+
+    .three-text-two{
+        font-size: 25px;
+    }
+
+    .hero-two-text{
+        font-size: 30px;
+    }
+
+    .hero-two-img{
+        width: 80%;
+    }
+}
+
+
 
 
 @media (max-width: 1000px) {

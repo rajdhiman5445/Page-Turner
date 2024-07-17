@@ -24,7 +24,7 @@ const HeroFive = () => {
             <h1>Consume ideas from<br/> top 1%.</h1>
         </div>
               <h3>Start Exploring Now</h3>
-              <div className='btn-explore'><Link to="/books"><Buttons text={"Explore Books"} /></Link></div>
+              <div className='btn-explore'><Link to="/books" onClick={()=>{window.scrollTo(0, 0);}}><Buttons text={"Explore Books"} /></Link></div>
           </div>
           <div className='five-img'>
             <img src={img} width={"100%"}/>
