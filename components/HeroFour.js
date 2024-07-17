@@ -60,7 +60,7 @@ const HeroFour = () => {
         </div>
         <div className='four-main'>
             <div id='four-two' className='hero-four-text'>
-            <h3>Web page will optimize itself according to the device you are reading on.</h3>
+            <h3>Tailored for Any Screen, Every Time. <br/> <br/> Your Perfect Read, on Any Screen.</h3>
             </div>
             <div  className='four-img'>
               <img src={img} id="four-three" className='img-four' />

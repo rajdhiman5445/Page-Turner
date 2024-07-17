@@ -2,7 +2,7 @@
     color: #D06832;
     font-size: 75px;
     margin-left: 5%;
-    margin-top: 30px;
+    margin-top: 5%;
     opacity: 0;
     translate: 0 0;
 }
@@ -364,6 +364,7 @@
 
     .five-text{
         margin-left: 0;
+        font-size: 20px;
     }
 
     .hero-page{
