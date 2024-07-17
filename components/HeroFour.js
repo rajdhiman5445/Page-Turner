@@ -39,10 +39,10 @@ const HeroFour = () => {
     gsap.to("#four-three", {
       opacity: 1,
       delay: 0.5,
-      x: 0,
+      y: 0,
       scrollTrigger:{
-        trigger:"#four-one",
-        start:"20% bottom",
+        trigger:"#four-two",
+        start:"top bottom",
         end:"top 20%",
         scrub: true,
       },

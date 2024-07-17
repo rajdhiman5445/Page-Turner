@@ -20,7 +20,7 @@ const HeroTwo = () => {
         duration: 1,
         scrollTrigger: {
           trigger: "#two-text",
-          start: "bottom 99%",
+          start: "50% bottom",
           end: "top 20%",
           scrub:true,
         },

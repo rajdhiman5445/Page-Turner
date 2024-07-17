@@ -131,7 +131,7 @@
 .img-four{
     width: 80%;
     margin-left: 15%;
-    translate: 10 0;
+    translate: 0 50;
     opacity: 0;
 }
 
@@ -307,14 +307,27 @@
 
 @media (max-width: 700px) {
 
+    .img-four{
+        translate: 10 0;
+    }
+
+    .five-text{
+        margin-left: 0;
+    }
+
+    .hero-page{
+        width: 100%;
+        padding: 0;
+    }
+
     .hero-five{
         flex-wrap: wrap;
     }
 
     .main-head{
         font-size: 40px;
-        margin-top: 40px;
-        margin-left: 0;
+        margin: 2%;
+        margin-top: 20%;
         text-align: center;
     }
 
@@ -334,11 +347,11 @@
         width: 100%;
         text-align: center;
         font-size: 20px;
-        margin-left: 0;
+        margin-top: 10%;
     }
 
     .main-img-div{
-        margin-top: 30%;
+        margin-top: 10%;
         width: 100%;
     }
 

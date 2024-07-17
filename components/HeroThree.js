@@ -30,11 +30,11 @@ const HeroThree = () => {
         gsap.to(".img-phone", {
             opacity: 1,
             y: -20,
-            delay: 1,
-            duration: 5,
-            stagger: 1,
+            delay: 0.5,
+            duration: 2,
+            stagger: 0.5,
             scrollTrigger:{
-                trigger: ".img-phone",
+                trigger: "#text-three",
                 start: "1% bottom",
                 end: "top 20%",
                 scrub: true,
