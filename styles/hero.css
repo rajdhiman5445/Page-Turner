@@ -12,7 +12,7 @@
     font-optical-sizing: auto;
     font-style: normal;
     text-decoration: none;
-    margin: 0;
+    margin: 2%;
     padding: 0;
 }
 
@@ -29,7 +29,7 @@
     width: 50%;
     color: #E6DBC6;
     font-size: 40px;
-    margin-left: 8%;
+    margin-left: 5%;
     opacity: 0;
     
 }
@@ -131,7 +131,7 @@
 .img-four{
     width: 80%;
     margin-left: 15%;
-    translate: 300 0;
+    translate: 10 0;
     opacity: 0;
 }
 
@@ -334,7 +334,7 @@
     }
 
     .main-img-div{
-        margin-top: 20%;
+        margin-top: 30%;
         width: 100%;
     }
 

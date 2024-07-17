@@ -17,11 +17,10 @@ const HeroTwo = () => {
       gsap.to(item, {
         y: 20,
         opacity: 1,
-        delay: 1,
         duration: 1,
         scrollTrigger: {
-          trigger: item,
-          start: "20% bottom",
+          trigger: "#two-text",
+          start: "bottom 99%",
           end: "top 20%",
           scrub:true,
         },
