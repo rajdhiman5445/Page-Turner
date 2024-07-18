@@ -31,7 +31,7 @@ const HeroTwo = () => {
 
   return (
     <>
-    <div id="two" className='hero-two-page' ref={scrollRef}>
+    <div id="highlights" className='hero-two-page' ref={scrollRef}>
         <div id='two-text' className='hero-two-text'><h2>Take your <br/> library with you.<br/>
         No matter <br/> where you go.</h2></div>
         <div id='two-img' className='hero-two-img'>

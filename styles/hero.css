@@ -184,6 +184,45 @@
     height: 100%;   
 }
 
+
+.page-six{
+    height: 900px;
+    margin-top: 10%;
+}
+
+.six-text-main{
+    color: #D06832;
+    font-size: 30px;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 0;
+    margin-left: 5%;
+    translate: 0 10;
+    opacity: 0;
+}
+
+.six-text{
+    color: #E6DBC6;
+    font-size: 30px;
+    margin-top: 2%;
+    margin-left: 5%;
+    translate:  0 100;
+    opacity: 0;
+}
+
+.six-imgs{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10%;
+}
+
+.six-img{
+    width: 25%;
+    translate: 0 100;
+    opacity: 0;
+}
+
+
 @media (max-width: 1300px){
     .five-main-text{
         font-size: 20px;
@@ -358,6 +397,37 @@
     .hero-two-image{
         width: 100%;
     }
+
+
+     .page-six{
+    height: 2000px;
+}
+
+.six-text-main{
+    color: #D06832;
+    font-size: 30px;
+    margin-right: 5%;
+    margin-top: 10%;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.six-text{
+    color: #E6DBC6;
+    font-size: 25px;
+    margin-top: 2%;
+    margin-right: 5%;
+    text-align: center;
+}
+
+    .six-imgs{
+        flex-wrap: wrap;
+    }
+
+    .six-img{
+        width: 60%;
+        margin-top: 5%;
+    }
     
 }
 
@@ -448,5 +518,36 @@
 
     .hero-four-page{
         height: 800px;
+    }
+
+
+        .page-six{
+    height: 1300px;
+}
+
+.six-text-main{
+    color: #D06832;
+    font-size: 25px;
+    margin-right: 5%;
+    margin-top: 10%;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.six-text{
+    color: #E6DBC6;
+    font-size: 20px;
+    margin-top: 2%;
+    margin-right: 5%;
+    text-align: center;
+}
+
+    .six-imgs{
+        flex-wrap: wrap;
+    }
+
+    .six-img{
+        width: 70%;
+        margin-top: 5%;
     }
 }

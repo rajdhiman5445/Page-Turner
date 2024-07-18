@@ -6,12 +6,11 @@ import HeroTwo from './HeroTwo'
 import HeroThree from './HeroThree'
 import HeroFour from './HeroFour'
 import HeroFive from './HeroFive'
-import { Link } from 'react-router-dom'
+import HeroSix from './HeroSix'
 import BookPageTitleBar from './BookPageTitleBar'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
-import { useRef } from 'react'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -51,7 +50,7 @@ const HeroPage = () => {
       <h1 id='head-one' className='main-head'>Looking for your next <br/>great read?</h1>
       <div className='hero-one'>
         <div id="cta" className='hero-one-text'><h3>Make yourself <br/>at home!</h3>
-        <Link to="/books"><div className='btn-explore'><Buttons text={'Explore Books'}/></div></Link>
+        <a href="#highlights"><div className='btn-explore'><Buttons text={'Get Highlights'}/></div></a>
         </div>
         <div  className='main-img-div'><img src={MainImg} id="one-img" className='main-img' /></div>
         
@@ -65,6 +64,9 @@ const HeroPage = () => {
         </div>
       <div>
         <HeroFour/>
+      </div>
+      <div>
+        <HeroSix/>
       </div>
       <div>
         <HeroFive/>
