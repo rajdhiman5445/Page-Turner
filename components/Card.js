@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useInView } from "react-intersection-observer";
-import { useState } from "react";
+
 
 const Card = ({id, img, title, author, setLoading}) => {
     const {ref, inView } = useInView();

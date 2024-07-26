@@ -103,6 +103,7 @@ a:hover{
     border-radius: 5%;
     cursor: pointer;
     animation: appear 0.8s linear;
+    margin-right: 20px;
 }
 
 .shimmer_ui{
@@ -138,9 +139,14 @@ a:hover{
 .horizontal_book_list{
     justify-content:space-evenly;
     display: flex;
-    flex-wrap: wrap;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
     margin: 1%;
 }
+
+.horizontal_book_list::-webkit-scrollbar {
+    display: none;
+  }
 
 .all_books{
     text-align: center;
@@ -604,7 +610,17 @@ a:hover{
         width: 100%;
     }
 
+    .horizontal_book_list{
+        justify-content:space-evenly;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 1%;
+    }
     
+    .card_body{
+        margin-right: 5px;
+    }
+
     .img_main_div{
         position: relative;
         width: 50%;
