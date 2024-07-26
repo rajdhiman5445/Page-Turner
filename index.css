@@ -103,7 +103,7 @@ a:hover{
     border-radius: 5%;
     cursor: pointer;
     animation: appear 0.8s linear;
-    margin-right: 20px;
+    margin-right: 15px;
 }
 
 .shimmer_ui{
@@ -141,7 +141,25 @@ a:hover{
     display: flex;
     overflow-x: scroll;
     flex-wrap: nowrap;
-    margin: 1%;
+    margin: 2%;
+}
+
+.heading{
+    display: flex;
+    justify-content: space-between;
+}
+
+.scroll-btn{
+    display: flex;
+    margin-top: 1.5%;
+}
+
+.scroll{
+    cursor: pointer;
+}
+
+.scroll:hover{
+    color: #d06832;
 }
 
 .horizontal_book_list::-webkit-scrollbar {
@@ -635,6 +653,10 @@ a:hover{
 
     .btn_list{
         display: block;
+    }
+
+    .scroll-btn{
+        display: none;
     }
 
     .download_btn{
