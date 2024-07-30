@@ -103,7 +103,6 @@ a:hover{
     border-radius: 5%;
     cursor: pointer;
     animation: appear 0.8s linear;
-    margin-right: 12px;
 }
 
 .shimmer_ui{
@@ -142,6 +141,7 @@ a:hover{
     overflow-x: scroll;
     flex-wrap: nowrap;
     margin: 2%;
+    gap: 2%;
 }
 
 .heading{
@@ -175,6 +175,7 @@ a:hover{
     display: flex;
     flex-wrap: wrap;
     margin: 3%;
+    gap: 2%;
 }
 
 .cardImg{
@@ -264,6 +265,23 @@ a:hover{
     cursor: pointer;
     padding: 2%;
     
+}
+
+
+.explore-btn{
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    background-color: #161616;
+    color: #E6DBC6;
+    font-weight: bolder;
+    cursor: pointer;
+    padding: 2%;
+}
+
+.explore-btn:hover{
+    color: #d06832;
 }
 
 .download_btn:hover{

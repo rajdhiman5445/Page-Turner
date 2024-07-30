@@ -23,7 +23,10 @@
     justify-content: space-between;
 }
 
-
+.get-highlights{
+    font-size: medium;
+    margin-top: 100px;
+}
 
 .hero-one-text{
     width: 50%;
@@ -40,7 +43,7 @@
     height: 100%;
     margin-top: 1px;
     opacity: 0;
-    
+    translate: 0 10;
 }
 
 
@@ -143,7 +146,7 @@
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 0;
-    translate: 0 -80;
+    translate: -10 -80;
     opacity: 0;
 }
 
@@ -454,7 +457,7 @@
     .main-head{
         font-size: 40px;
         margin: 2%;
-        margin-top: 20%;
+        margin-top: 15%;
         text-align: center;
     }
 
@@ -497,6 +500,8 @@
     .hero-three-page{
         height: 800px;
     }
+
+    
 
     .hero-two-text{
         font-size: 20px;
