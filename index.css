@@ -103,7 +103,7 @@ a:hover{
     border-radius: 5%;
     cursor: pointer;
     animation: appear 0.8s linear;
-    margin-right: 15px;
+    margin-right: 12px;
 }
 
 .shimmer_ui{

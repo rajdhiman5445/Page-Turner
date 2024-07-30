@@ -21,12 +21,12 @@ const BookDetail =()=>{
     const [loading, setLoading] = useState(false);
 
 
-    
-    // make the api call to fetch data
+
+
     useEffect(() => {
         axios.get(server_url)
             .then(response => {
-                setBooksInfo(response.data); // Access response.data
+                setBooksInfo(response.data);
             })
             .catch(err => console.log(err));
     }, []);
@@ -84,7 +84,6 @@ const BookDetail =()=>{
                         <h1 >{thisBook.book_title}</h1>
                     </div>
                     <div className="main_author_name">
-                        {/* <h1>{thisBook.author_name}</h1> */}
                         <h1><Link to={`/result/${thisBook.author_name}`}>{thisBook.author_name}</Link></h1>
                     </div>
                     <div className="stars">
@@ -98,13 +97,12 @@ const BookDetail =()=>{
 
                         <Link to={`/readbook/`+`${thisBook.url}`+`${thisBook.token}`}><Buttons text="Read Now"/></Link>
                         <Link to={thisBook.epub}><Buttons text="Download EPUB"/></Link>
-                        <Link to={thisBook.pdf}><Buttons text="Download PDF"/></Link>
+                        <Link to={thisBook.pdf}><Buttons text="Buy on Amazon"/></Link>
                     </div>
                 </div>
         
             </div>
 
-            {/* <div ref={ref} className={`${inView?'main_about':'main_about_hidden'}`}> */}
             <div ref={ref} className={'main_about'}>
                 <div className="main_about_head">
                 <h2 >About the book</h2>

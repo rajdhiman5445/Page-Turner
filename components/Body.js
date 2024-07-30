@@ -1,9 +1,12 @@
+import { useEffect, useState } from "react";
 import Block from "./Block";
 import FilteredBlock from "./FilteredBlock";
 
 
 const Body = () => {
-    
+
+
+
         return (
             <>
             <div className="app_body">

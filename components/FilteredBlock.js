@@ -47,8 +47,8 @@ const FilteredBlock =({list})=>{
             <h2>{list}</h2>
             {scrollVisible ? 
                 <div className="scroll-btn">
-                <div className="scroll" onClick={() => onScroll(-50)}><ArrowLeftIcon /></div>
-                <div className="scroll" onClick={() => onScroll(50)}><ArrowRightIcon/></div>
+                <div className="scroll" onClick={() => onScroll(-100)}><ArrowLeftIcon /></div>
+                <div className="scroll" onClick={() => onScroll(100)}><ArrowRightIcon/></div>
             </div>  : null  
             }
             </div>
