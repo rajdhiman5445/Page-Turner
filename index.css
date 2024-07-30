@@ -617,9 +617,7 @@ a:hover{
         opacity: 0;
     }
 
-    .nav_items ul{
-        pointer-events: none;
-    }
+    
 
     .nav_itemsactive ul{
         display: flex;
@@ -716,6 +714,10 @@ a:hover{
     .nav_items ul{
         display:contents;
         text-align: center; 
+    }
+
+    .nav_items ul{
+        pointer-events: none;
     }
 
     .nav_items{
