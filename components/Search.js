@@ -45,7 +45,7 @@ const Search = () => {
             
             <div className="block-heading">
             <div style={{padding:"50px"}}></div>
-            <div className="horizontal_book_list">
+            <div className="all_book_list">
             
                 {searchResult.map((books)=>(
                     <Card key={books._id} id={books._id} img={books.img_url} title={books.book_title} author={books.author_name} />

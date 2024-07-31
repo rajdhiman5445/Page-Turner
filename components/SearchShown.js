@@ -31,7 +31,7 @@ const SearchShown =() => {
         <BookPageTitleBar/>
         <div className="result-heading">
             <h1 className="result-title">Books in : {searchText}</h1>
-            <div className="horizontal_book_list">
+            <div className="all_book_list">
                 {filterData.map((books)=>(
                     <Card key={books._id} id={books._id} img={books.img_url} title={books.book_title} author={books.author_name} />
                 ))}
