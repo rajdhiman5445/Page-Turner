@@ -97,7 +97,7 @@ const BookDetail =()=>{
 
                         <Link to={`/readbook/`+`${thisBook.url}`+`${thisBook.token}`}><Buttons text="Read Now"/></Link>
                         <Link to={thisBook.epub}><Buttons text="Download EPUB"/></Link>
-                        <Link to={thisBook.pdf}><Buttons text="Buy on Amazon"/></Link>
+                        <Link to={thisBook.buy} target="_blank" rel="noopener noreferrer"><Buttons text="Buy on Amazon"/></Link>
                     </div>
                 </div>
         
