@@ -4,6 +4,7 @@ import BookPageTitleBar from "./BookPageTitleBar";
 import axios from "axios";
 import Card from "./Card";
 import server_url from "../data/url";
+import { Link } from "react-router-dom";
 
 const SearchShown =() => {
 
@@ -31,6 +32,7 @@ const SearchShown =() => {
         <BookPageTitleBar/>
         <div className="result-heading">
             <h1 className="result-title">Books in : {searchText}</h1>
+            <Link to="/categories"><h2 style={{textAlign:"center"}}>Explore all Genres</h2> </Link>
             <div className="all_book_list">
                 {filterData.map((books)=>(
                     <Card key={books._id} id={books._id} img={books.img_url} title={books.book_title} author={books.author_name} />

@@ -372,7 +372,7 @@ a:hover{
 .result-title{
     font-size: 40px;
     text-align: center;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
 }
 
 .footer{
@@ -450,7 +450,32 @@ a:hover{
     
 }
 
+.genreData{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
 
+.genreCard{
+    max-width: 304px;
+    max-height: 178px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    animation: appear 2s linear;
+    -webkit-transition-property: all; 
+    -webkit-transition-duration: 0.3s; 
+    -webkit-transition-timing-function: ease; 
+    
+}
+
+.genreCard_hidden{
+    opacity: 0;
+}
+
+.genreCard:hover{
+    transform: scale(1.2);
+
+}
 
 
 
