@@ -3,6 +3,7 @@ background-color: #161616;
 color: #E6DBC6;
 margin: 0;
 padding: 0;
+-webkit-tap-highlight-color: transparent;
 }
 
 body::-webkit-scrollbar {
