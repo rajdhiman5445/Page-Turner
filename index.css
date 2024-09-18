@@ -457,8 +457,7 @@ a:hover{
 }
 
 .genreCard{
-    max-width: 304px;
-    max-height: 178px;
+    
     margin-bottom: 10px;
     margin-top: 20px;
     animation: appear 2s linear;
