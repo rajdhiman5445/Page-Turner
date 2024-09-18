@@ -330,6 +330,7 @@ a:hover{
 .search_title{
     display: flex;
     justify-content: space-between;
+    padding: 8px;
 }
 
 .search_img{
@@ -341,6 +342,7 @@ a:hover{
 .title_main{
     display: flex;
     justify-content: space-between;
+    padding: 8px;
 }
 
 
