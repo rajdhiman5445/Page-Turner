@@ -31,6 +31,9 @@ import Sports from "../files/Categories/30.svg"
 import Thriller from "../files/Categories/31.svg"
 import Travel from "../files/Categories/32.svg"
 import Young from "../files/Categories/33.svg"
+import short from "../files/Categories/37.svg"
+import action from "../files/Categories/35.svg"
+import adventure from "../files/Categories/36.svg"
 
 const genresData = [
     { id: "18", img: NonFiction, genre: "Non-Fiction" },
@@ -56,7 +59,7 @@ const genresData = [
   { id: "15", img: Memoir, genre: "Memoir" },
   { id: "16", img: Music, genre: "Music" },
   { id: "1", img: Art, genre: "Art" },
- 
+  { id: "34", img: short, genre: "Short Story"},
   { id: "3", img: Business, genre: "Business" },
   { id: "4", img: Children, genre: "Children's" },
   { id: "5", img: Classics, genre: "Classics" },
@@ -66,8 +69,8 @@ const genresData = [
   { id: "21", img: Poetry, genre: "Poetry" },
   { id: "22", img: Psychology, genre: "Psychology" },
   { id: "23", img: Religion, genre: "Religion" },
-
- 
+  { id: "35", img: action, genre: "Action" },
+  { id: "36", img: adventure, genre: "Adventure" },
   { id: "32", img: Travel, genre: "Travel" },
   { id: "33", img: Young, genre: "Young Adult" },
 ];
