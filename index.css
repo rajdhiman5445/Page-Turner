@@ -716,6 +716,19 @@ a:hover{
         left:10%;
     }
 
+    .heading{
+        justify-content: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: center;
+    }
+
+
+    .nav_bar{
+        border-bottom: 0;
+        
+    }
+
     .main_book_title{
         margin-top: 5%;
         text-align: center;
