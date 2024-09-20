@@ -133,8 +133,25 @@ a:hover{
 .card_body:hover{
     box-shadow: #d06832 0px 2px 10px 0px;
     color: #d06832;
-
 }
+
+.scroll_view{
+    display: flex;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content:space-evenly;
+    display: none;
+}
+
+.scroll_card{
+    margin-right: 20px;
+}
+
+.scroll_view::-webkit-scrollbar {
+    display: none;
+  }
 
 .horizontal_book_list{
     justify-content:space-evenly;
@@ -763,6 +780,11 @@ a:hover{
     .nav_items{
         opacity: 0;
         height: 0;
+    }
+
+    .scroll_view{
+        display: flex;
+        margin-bottom: 10px;
     }
 
 

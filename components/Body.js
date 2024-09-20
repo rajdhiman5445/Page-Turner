@@ -1,7 +1,6 @@
-import { useEffect, useState } from "react";
 import Block from "./Block";
 import FilteredBlock from "./FilteredBlock";
-
+import ScrollView from "./ScrollView";
 
 const Body = () => {
 
@@ -10,6 +9,7 @@ const Body = () => {
         return (
             <>
             <div className="app_body">
+                <ScrollView/>
                 <Block list="Best Sellers You Can't Miss"/>
                 <FilteredBlock list="Dive into the World of Discovery"/>
                 <FilteredBlock list="Must-Read Thriller Hits"/>

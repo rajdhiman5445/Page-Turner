@@ -1,8 +1,5 @@
-import genres from "../data/genres";
 import genresData from "../data/GenresData";
-import { Link } from "react-router-dom";
 import GenreCard from "./GenreCard";
-import { useState, useEffect } from "react";
 
 const Categories = () => {
     
