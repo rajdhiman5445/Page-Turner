@@ -45,11 +45,15 @@ const appRouter = createBrowserRouter([
                 element:<Body/>,
             },
             {
+                path:"/home",
+                element:<Body/>,
+            },
+            {
                 path:"/categories",
                 element:<Categories/>
             },
             {
-                path:"/bookseries",
+                path:"/library",
                 element:<AllBooks/>
             },
             
@@ -59,7 +63,7 @@ const appRouter = createBrowserRouter([
         errorElement:<Error/>,
     },
     {
-        path:"/home",
+        path:"/highlights",
         element:<HeroPage/>,
     },
     {

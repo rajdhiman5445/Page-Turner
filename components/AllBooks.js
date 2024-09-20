@@ -28,7 +28,7 @@ const AllBooks =()=>{
     return(
         <>
         <div className="app_body">
-           <h2 className="all_books">All Books</h2>
+           <h2 className="all_books">Library</h2>
            <div className="connect_msg">Currently {length} books are available <br/> 
            We are trying hard to add more books</div>
             <div className="all_book_list">
