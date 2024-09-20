@@ -16,7 +16,7 @@ const Body = () => {
                 <FilteredBlock list="Gas Station Horrors: Read If You Dare"/>
                 <FilteredBlock list="Top Non-Fiction Books"/>
                 <FilteredBlock list="Most Popular Fiction Books"/>
-                <FilteredBlock list="Spine-Tingling Horror Hits"/>
+
                 
             </div>
             </>
