@@ -8,7 +8,7 @@ const types = [
     {id: 1, link: "/search", img: search, title:"Search for books"},
     {id:2, link: "/categories", img: genres, title:"Explore all Genres"},
     {id:3, link: "/library", img: library, title:"Explore Library"},
-    {id:4, link:"/home", img: highlights, title:"Get Highlights"},
+    {id:4, link:"/highlights", img: highlights, title:"Get Highlights"},
     {id:5, link:"/quotes", img: quote, title:"Explore Quotes"}
 ]
 
