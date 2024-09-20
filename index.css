@@ -139,13 +139,12 @@ a:hover{
     display: flex;
     overflow-x: scroll;
     flex-wrap: nowrap;
-    padding: 2%;
-    margin: 3%;
     justify-content:space-evenly;
     display: none;
 }
 
 .scroll_card{
+    margin-left: 20px;
     margin-right: 20px;
 }
 
