@@ -217,7 +217,7 @@ useEffect(() => {
   className="settings-button"
   onClick={toggleDrawer}
   style={{
-    position: 'absolute',
+    position: 'fixed',
     bottom: drawerOpen ? (isMobile ? '80px' : '70px') : '0',
     left: '50%',
     transform: 'translateX(-50%)',
