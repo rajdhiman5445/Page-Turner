@@ -123,7 +123,7 @@ useEffect(() => {
       <div 
   className="settings-drawer" 
   style={{
-    position: 'absolute',
+    position: 'fixed',
     bottom: drawerOpen ? '0' : (isMobile ? '-80px' : '-70px'),
     contentVisibility: drawerOpen ? 'visible' : 'hidden',
     right: '0',
