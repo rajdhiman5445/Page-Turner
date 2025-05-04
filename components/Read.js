@@ -199,7 +199,21 @@ useEffect(() => {
   </div>
 </div>
 
-      <div 
+      
+     
+      <ReactReader
+        url={`https://firebasestorage.googleapis.com/v0/b/ebooks5445.appspot.com/o/${params.url}?alt=media&token=${params.token}`}
+        location={location}
+        locationChanged={(loc) => setLocation(loc)}
+        readerStyles={theme === 'dark' ? darkReaderTheme : lightReaderTheme}
+        getRendition={_rendition => {
+          updateTheme(_rendition, theme);
+          rendition.current = _rendition;
+          rendition.current.themes.fontSize(`${fontSize}%`);
+        }}
+      />
+
+<div 
   className="settings-button"
   onClick={toggleDrawer}
   style={{
@@ -221,18 +235,6 @@ useEffect(() => {
 >
   {isMobile ? '⚙️' : (drawerOpen ? 'Close' : 'Settings ⚙️')}
 </div>
-     
-      <ReactReader
-        url={`https://firebasestorage.googleapis.com/v0/b/ebooks5445.appspot.com/o/${params.url}?alt=media&token=${params.token}`}
-        location={location}
-        locationChanged={(loc) => setLocation(loc)}
-        readerStyles={theme === 'dark' ? darkReaderTheme : lightReaderTheme}
-        getRendition={_rendition => {
-          updateTheme(_rendition, theme);
-          rendition.current = _rendition;
-          rendition.current.themes.fontSize(`${fontSize}%`);
-        }}
-      />
 
   
     </div>
