@@ -124,10 +124,10 @@ useEffect(() => {
   className="settings-drawer" 
   style={{
     position: 'fixed',
-    bottom: drawerOpen ? '0' : (isMobile ? '-80px' : '-70px'),
+    bottom: drawerOpen ? '0' : (isMobile ? '-110px' : '-70px'),
     contentVisibility: drawerOpen ? 'visible' : 'hidden',
     right: '0',
-    height: drawerOpen ? isMobile ? '80px' : '70px' : '0',
+    height: drawerOpen ? isMobile ? '110px' : '70px' : '0',
     backgroundColor: theme === 'dark' ? '#222' : '#f5f5f5',
     zIndex: 999,
     display: 'flex',
@@ -197,6 +197,46 @@ useEffect(() => {
       Aa
     </button>
   </div>
+
+  <div style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
+    <span style={{ marginRight: '10px', fontSize: isMobile ? '14px' : '16px' }}> </span>
+    <button 
+      onClick={()=>{navigate('/home')}}
+      style={{
+        backgroundColor: 'transparent',
+        border: `1px solid ${theme === 'dark' ? '#E6DBC6' : '#333'}`,
+        color: theme === 'dark' ? '#E6DBC6' : '#333',
+        borderRadius: '5px',
+        padding: isMobile ? '2px 8px' : '5px 10px',
+        cursor: 'pointer',
+        fontSize: isMobile ? '14px' : '16px',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center'
+      }}
+    >
+      Home
+    </button>
+
+    <button 
+      onClick={()=>{navigate(-1)}}
+      style={{
+        backgroundColor: 'transparent',
+        border: `1px solid ${theme === 'dark' ? '#E6DBC6' : '#333'}`,
+        color: theme === 'dark' ? '#E6DBC6' : '#333',
+        borderRadius: '5px',
+        padding: isMobile ? '2px 8px' : '5px 10px',
+        cursor: 'pointer',
+        fontSize: isMobile ? '14px' : '16px',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center'
+      }}
+    >
+      Exit Reader
+    </button>
+  </div>
+
 </div>
 
       
@@ -218,7 +258,7 @@ useEffect(() => {
   onClick={toggleDrawer}
   style={{
     position: 'fixed',
-    bottom: drawerOpen ? (isMobile ? '80px' : '70px') : '0',
+    bottom: drawerOpen ? (isMobile ? '110px' : '70px') : '0',
     left: '50%',
     transform: 'translateX(-50%)',
     padding: isMobile ? '3px 10px' : '5px 15px',
