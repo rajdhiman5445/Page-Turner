@@ -118,7 +118,7 @@ useEffect(() => {
   };
 
   return (
-    <div className='read-page' style={{ height: '95vh' }}>
+    <div className='read-page' style={{ height: '100vh' }}>
       {/* Settings Drawer */}
       <div 
   className="settings-drawer" 
