@@ -118,15 +118,16 @@ useEffect(() => {
   };
 
   return (
-    <div className='read-page' style={{ height: '100vh' }}>
+    <div className='read-page' style={{ height: '95vh' }}>
       {/* Settings Drawer */}
       <div 
   className="settings-drawer" 
   style={{
     position: 'absolute',
     bottom: drawerOpen ? '0' : (isMobile ? '-80px' : '-70px'),
+    contentVisibility: drawerOpen ? 'visible' : 'hidden',
     right: '0',
-    height: isMobile ? '80px' : '70px',
+    height: drawerOpen ? isMobile ? '80px' : '70px' : '0',
     backgroundColor: theme === 'dark' ? '#222' : '#f5f5f5',
     zIndex: 999,
     display: 'flex',
