@@ -50,6 +50,52 @@ body::-webkit-scrollbar {
     text-decoration: none;
 }
 
+/* Add these styles to your CSS file */
+
+.settings-drawer {
+    position: absolute;
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    transition: top 0.3s ease;
+  }
+  
+  .settings-button {
+    transition: top 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  
+  .settings-button:hover {
+    opacity: 0.9;
+  }
+  
+  .font-size-controls button:hover {
+    opacity: 0.8;
+  }
+  
+  /* If you prefer to use these CSS classes instead of inline styles */
+  .dark-theme {
+    background-color: #222;
+    color: #E6DBC6;
+  }
+  
+  .light-theme {
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .settings-drawer {
+      flex-direction: column;
+      height: auto;
+      padding: 10px 0;
+    }
+    
+    .font-size-controls {
+      margin-bottom: 10px;
+    }
+  }
+
 .nav_items ul li{
     cursor: pointer;
     font-family: "League Spartan", sans-serif;
