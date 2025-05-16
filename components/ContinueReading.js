@@ -1,4 +1,5 @@
 import Card from "./Card";
+import Card2 from "./Card2";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import server_url from "../data/url";
