@@ -307,10 +307,10 @@ const Read = () => {
         className="settings-drawer" 
         style={{
           position: 'fixed',
-          bottom: drawerOpen ? '0' : (isMobile ? '-130px' : '-90px'),
+          bottom: drawerOpen ? '0' : (isMobile ? '-150px' : '-90px'),
           contentVisibility: drawerOpen ? 'visible' : 'hidden',
           right: '0',
-          height: drawerOpen ? isMobile ? '130px' : '90px' : '0',
+          height: drawerOpen ? isMobile ? '150px' : '90px' : '0',
           backgroundColor: theme === 'dark' ? '#222' : '#f5f5f5',
           zIndex: 999,
           display: 'flex',
@@ -461,7 +461,7 @@ const Read = () => {
         onClick={toggleDrawer}
         style={{
           position: 'fixed',
-          bottom: drawerOpen ? (isMobile ? '130px' : '90px') : '0',
+          bottom: drawerOpen ? (isMobile ? '180px' : '90px') : '0',
           left: '50%',
           transform: 'translateX(-50%)',
           padding: isMobile ? '3px 10px' : '5px 15px',
