@@ -9,6 +9,7 @@ import Rating from '@mui/material/Rating';
 import Footer from "./Footer";
 import { useInView } from "react-intersection-observer";
 import server_url from "../data/url";
+import DownloadButtons from "./DownloadBtn";
 
 
 
@@ -93,11 +94,19 @@ const BookDetail =()=>{
                     <div> 
                         <h2>in {thisBook.genres.map((genre, index) => <span key={index}><Link to={`/result/${genre}`}>{genre + " "}</Link></span>)}</h2>
                     </div>
+
+
                     <div className="btn_list">
 
-                        <Link to={`/readbook/`+`${thisBook.url}`+`${thisBook.token}`}><Buttons text="Read Now" thisBookId={thisBookId}/></Link>
-                        <Link to={thisBook.epub}><Buttons text="Download EPUB"/></Link>
-                        <Link to={thisBook.buy} target="_blank" rel="noopener noreferrer"><Buttons text="Buy on Amazon"/></Link>
+                       {/*  <Link to={`/readbook/`+`${thisBook.url}`+`${thisBook.token}`}><Buttons text="Read Now" thisBookId={thisBookId}/></Link> */}
+                       <Buttons 
+        text="Read Now" 
+        thisBookId={thisBookId}
+        url={thisBook.url}
+        token={thisBook.token}
+      />
+                        <Link to={thisBook.epub}><DownloadButtons text="Download EPUB"/></Link>
+                        <Link to={thisBook.buy} target="_blank" rel="noopener noreferrer"><DownloadButtons text="Buy on Amazon"/></Link>
                     </div>
                 </div>
         
