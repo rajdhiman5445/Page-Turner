@@ -6,11 +6,13 @@ import { useNavigate } from 'react-router-dom';
 import { Link } from "react-router-dom";
 import Close from "../files/close.svg"
 import CloseOrange from "../files/closeorange.svg"
+import NewLogo from "../files/plot_twist.svg"
+import NewLogoOrange from "../files/plot_twist_orange.svg"
 
 
 
 const SearchPageBar =({searchText, setSearchText, booksInfo, setSearchResult, handleKeyDown}) => {
-    const [img, setImg] = useState(Logo);
+    const [img, setImg] = useState(NewLogo);
     const [icon, setIcon] = useState(Close);
 
     const navigate = useNavigate();
@@ -27,10 +29,10 @@ const SearchPageBar =({searchText, setSearchText, booksInfo, setSearchResult, ha
                 <Link to="/">
                 <img src={img} style={{width:"80px", cursor:"pointer"}}
                 onMouseEnter={()=>{
-                    setImg(LogoOrange);
+                    setImg(NewLogoOrange);
                 }}
                 onMouseOut={()=>{
-                    setImg(Logo);
+                    setImg(NewLogo);
                 }}
                 /></Link>
             </div>

@@ -8,7 +8,7 @@ const Footer = () =>{
             <div className="space"></div>
             <Quote/>
             <div style={{margin:"5%"}}></div>
-            <div><Link to="https://github.com/rajdhiman5445/Page-Turner">© Page & Turner</Link></div>
+            <div><Link to="https://github.com/rajdhiman5445/Page-Turner">© Plot Twist</Link></div>
             <div>Made with 🍀 in India</div>
         </div>
         
