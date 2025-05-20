@@ -1,8 +1,9 @@
 import Block from "./Block";
-import ContinueReading from "./ContinueReading";
 import FilteredBlock from "./FilteredBlock";
 import ScrollView from "./ScrollView";
 import ContinueReading from "./ContinueReading";
+
+// some comments here
 
 const Body = () => {
 
