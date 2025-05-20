@@ -7,6 +7,7 @@ import server_url from "../data/url";
 import Shimmer from "./Shimmer";
 import ArrowLeftIcon from '@mui/icons-material/ArrowLeft';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
+import { SignInButton, SignedOut } from "@clerk/clerk-react";
 
 const ContinueReading = () => {
     const [booksInfo, setBooksInfo] = useState([]);
@@ -75,8 +76,16 @@ const ContinueReading = () => {
                 <div className="heading">
                     <h2>Continue Reading</h2>
                 </div>
-                <div className="sign-in-message">
+                <div className="empty-list-message">
                     <p>Please sign in to see your reading list</p>
+                    
+                </div>
+                <div style={{display:"flex", textAlign:"center", alignItems:"center", justifyContent:"center"}}>
+                <SignedOut>
+                <SignInButton mode="modal" > 
+                        <a className="nav-items" style={{cursor:"pointer", fontFamily:"League Spartan" }}>Sign In</a>
+                </SignInButton>
+                </SignedOut>
                 </div>
             </div>
         );

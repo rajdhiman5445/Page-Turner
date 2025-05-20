@@ -13,7 +13,7 @@ const Body = () => {
             <div className="app_body">
                 <ScrollView/>
                 <Block list="Best Sellers You Can't Miss"/>
-                {localStorage.getItem('continue') !== null ? <ContinueReading /> : null}
+                <ContinueReading />
                 <FilteredBlock list="Dive into the World of Discovery"/>
                 <FilteredBlock list="Must-Read Thriller Hits"/>
                 <FilteredBlock list="Gas Station Horrors: Read If You Dare"/>

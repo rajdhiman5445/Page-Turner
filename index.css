@@ -42,6 +42,34 @@ body::-webkit-scrollbar {
     border-bottom: 0.5px solid #E6DBC6;
 }
 
+.empty-list-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+  text-align: center;
+  
+  width: 100%;
+}
+
+.empty-list-message p {
+  font-size: 1.2rem;
+  color: #666;
+  margin: 0;
+  max-width: 280px; /* Limit width for readability on small screens */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+  .empty-list-message {
+    min-height: 10vh;
+  }
+  
+  .empty-list-message p {
+    font-size: 1.1rem;
+  }
+}
+
 
 .nav_items ul{
     display: flex;
