@@ -27,9 +27,14 @@ function updateTheme(rendition, theme) {
 const Read = () => {
   const params = useParams();
   const rendition = useRef(undefined);
-  const [theme, setTheme] = useState('dark');
+  // Use useLocalStorageState for theme and fontSize to persist preferences
+  const [theme, setTheme] = useLocalStorageState('reader-theme', {
+    defaultValue: 'dark',
+  });
+  const [fontSize, setFontSize] = useLocalStorageState('reader-font-size', {
+    defaultValue: 100, // 100% is default
+  });
   const [drawerOpen, setDrawerOpen] = useState(false);
-  const [fontSize, setFontSize] = useState(100); // 100% is default
   
   // Notes functionality (replacing highlights)
   const [notes, setNotes] = useLocalStorageState('book-notes', {
