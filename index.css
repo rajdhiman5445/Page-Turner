@@ -68,7 +68,10 @@ body::-webkit-scrollbar {
   .empty-list-message p {
     font-size: 1.1rem;
   }
+  
 }
+
+
 
 
 .nav_items ul{
@@ -122,6 +125,10 @@ body::-webkit-scrollbar {
     .font-size-controls {
       margin-bottom: 10px;
     }
+
+
+
+
   }
 
 .nav_items ul li{
@@ -131,6 +138,8 @@ body::-webkit-scrollbar {
   font-style: normal;
   text-decoration: none;
 }
+
+
 
 a{
     text-decoration: none;

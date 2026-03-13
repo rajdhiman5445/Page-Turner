@@ -79,7 +79,19 @@ const Read = () => {
       ...ReactReaderStyle.readerArea,
       transition: undefined,
     },
+
+    // this is where i made edit to remove buttons
+    arrow: {
+    ...ReactReaderStyle.arrow,
+    display: 'none', // This kills the arrows
+  },
+  arrowHover: {
+    ...ReactReaderStyle.arrowHover,
+    display: 'none',
   }
+    
+  }
+
 
   const darkReaderTheme = {
     ...ReactReaderStyle,
@@ -116,6 +128,16 @@ const Read = () => {
       ...ReactReaderStyle.tocButton,
       color: 'white',
     },
+
+    // this is where i made the edit to remove buttons
+    arrow: {
+    ...ReactReaderStyle.arrow,
+    display: 'none', // This kills the arrows
+  },
+  arrowHover: {
+    ...ReactReaderStyle.arrowHover,
+    display: 'none',
+  }
   }
 
   const toggleDrawer = () => {
@@ -452,6 +474,7 @@ const Read = () => {
       <ReactReader
         url={`https://firebasestorage.googleapis.com/v0/b/ebooks5445.appspot.com/o/${params.url}?alt=media&token=${params.token}`}
         location={location}
+        swipeable={true}
         locationChanged={(loc) => setLocation(loc)}
         readerStyles={theme === 'dark' ? darkReaderTheme : lightReaderTheme}
         getRendition={(_rendition) => {
