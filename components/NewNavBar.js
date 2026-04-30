@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import Title from "./Title";
-import Menu from "../files/menu.svg";
-import MenuOrange from "../files/menuorange.svg";
+import Menu from "../files/menu.svg?url";
+import MenuOrange from "../files/menuorange.svg?url";
 import { useState } from "react";
 import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/clerk-react';
-import NewLogo from "../files/plot_twist.svg"
-import NewLogoOrange from "../files/plot_twist_orange.svg"
+import NewLogo from "../files/plot_twist.svg?url"
+import NewLogoOrange from "../files/plot_twist_orange.svg?url"
 
 const NewNavBar = () => {
     const [menu, setMenu] = useState(Menu);

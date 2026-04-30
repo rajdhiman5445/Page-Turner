@@ -7,8 +7,6 @@ import SearchOrange from "../files/search-orange.svg"
 import NewLogo from "../files/plot_twist.svg"
 import NewLogoOrange from "../files/plot_twist_orange.svg"
 
-console.log("hello")
-
 const BookPageTitleBar =() => {
     const [img, setImg] = useState(NewLogo);
     const [icon, setIcon] = useState(SearchWhite);
