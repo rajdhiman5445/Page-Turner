@@ -1,8 +1,8 @@
-import search from "../files/types/search.svg"
-import highlights from "../files/types/highlights.svg"
-import genres from "../files/types/genres.svg"
-import quote from "../files/types/quotes.svg"
-import library from "../files/types/library.svg"
+import search from "url:../files/types/search.svg"
+import highlights from "url:../files/types/highlights.svg"
+import genres from "url:../files/types/genres.svg"
+import quote from "url:../files/types/quotes.svg"
+import library from "url:../files/types/library.svg"
 
 const types = [
     {id: 1, link: "/search", img: search, title:"Search for books"},

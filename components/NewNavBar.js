@@ -10,10 +10,16 @@ import NewLogoOrange from "url:../files/plot_twist_orange.svg"
 const NewNavBar = () => {
     const [menu, setMenu] = useState(Menu);
     const [clicked, setClicked] = useState(false);
+    const [img, setImg] = useState(NewLogo);
    
     return (
-        <div>
-            <div className="title">
+        <div className="new_logo_header">
+
+            
+            
+            <div className={"new_nav_items" + `${clicked ? "active" : "" }`}>
+
+                <div className="new_title">
                         <div>
                             <Link to="/books">
                             <img src={img} style={{width:"100px", cursor:"pointer"}}
@@ -25,9 +31,8 @@ const NewNavBar = () => {
                             }}
                             /></Link>
                         </div>
-            </div>
-            
-            <div className={"nav_items" + `${clicked ? "active" : "" }`}>
+                </div>
+
                 <ul>
                     <li><Link to="/books">Home</Link></li>
                     <li><Link to="/library">Library</Link></li>
@@ -37,7 +42,6 @@ const NewNavBar = () => {
                     <li><Link to="/search">Search Books</Link></li>
                     
                 </ul>
-            </div>
             <div>
                 <img 
                     src={menu} 
@@ -72,6 +76,8 @@ const NewNavBar = () => {
                     <UserButton afterSignOutUrl="/" />
                 </SignedIn>
             </div>
+                </div>
+            
         </div>
     );
 };

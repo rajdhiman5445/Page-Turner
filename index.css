@@ -17,6 +17,34 @@ body::-webkit-scrollbar {
     justify-content: center;
 }
 
+
+.new_title{
+    padding: 0;
+    flex-shrink: 0;
+}
+
+.new_nav_items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 24px;
+}
+
+.new_nav_items ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+}
+
+
+
+
 .read-page{
     background-color: #161616;
     color: #E6DBC6;
@@ -80,6 +108,8 @@ body::-webkit-scrollbar {
     list-style-type: none;
     text-decoration: none;
 }
+
+
 
 /* Add these styles to your CSS file */
 
