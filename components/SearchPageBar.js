@@ -1,13 +1,13 @@
 
 import { useEffect, useState, useRef } from "react";
-import Logo from "../files/page_turner_logo.svg"
-import LogoOrange from "../files/page_turner_logo_orange.svg"
+import Logo from "url:../files/page_turner_logo.svg"
+import LogoOrange from "url:../files/page_turner_logo_orange.svg"
 import { useNavigate } from 'react-router-dom';
 import { Link } from "react-router-dom";
-import Close from "../files/close.svg"
-import CloseOrange from "../files/closeorange.svg"
-import NewLogo from "../files/plot_twist.svg"
-import NewLogoOrange from "../files/plot_twist_orange.svg"
+import Close from "url:../files/close.svg"
+import CloseOrange from "url:../files/closeorange.svg"
+import NewLogo from "url:../files/plot_twist.svg"
+import NewLogoOrange from "url:../files/plot_twist_orange.svg"
 
 
 

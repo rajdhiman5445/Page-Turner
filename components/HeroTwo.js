@@ -1,5 +1,5 @@
 import React from 'react'
-import HeroTwoImg from "../files/square_img.svg"
+import HeroTwoImg from "url:../files/square_img.svg"
 import { ScrollTrigger } from 'gsap/all'
 import { useRef } from 'react'
 import { useGSAP } from '@gsap/react'

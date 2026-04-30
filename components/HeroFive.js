@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import img from "../files/last_img.svg"
+import img from "url:../files/last_img.svg"
 import Buttons from "./Buttons"
 import { Link } from 'react-router-dom'
 import { useGSAP } from '@gsap/react'

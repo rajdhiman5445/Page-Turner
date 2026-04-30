@@ -1,7 +1,7 @@
 import React from 'react'
-import img1 from "../files/light.svg"
-import img2 from "../files/dark.svg"
-import img3 from "../files/orange.svg"
+import img1 from "url:../files/light.svg"
+import img2 from "url:../files/dark.svg"
+import img3 from "url:../files/orange.svg"
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'

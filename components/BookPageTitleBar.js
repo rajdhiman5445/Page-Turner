@@ -1,11 +1,13 @@
 import { useState } from "react";
-import Logo from "../files/page_turner_logo.svg"
-import LogoOrange from "../files/page_turner_logo_orange.svg"
+import Logo from "url:../files/page_turner_logo.svg"
+import LogoOrange from "url:../files/page_turner_logo_orange.svg"
 import { Link } from "react-router-dom";
-import SearchWhite from "../files/search-white.svg"
-import SearchOrange from "../files/search-orange.svg"
-import NewLogo from "../files/plot_twist.svg"
-import NewLogoOrange from "../files/plot_twist_orange.svg"
+import SearchWhite from "url:../files/search-white.svg"
+import SearchOrange from "url:../files/search-orange.svg"
+import NewLogo from "url:../files/plot_twist.svg"
+import NewLogoOrange from "url:../files/plot_twist_orange.svg"
+
+console.log("hello")
 
 const BookPageTitleBar =() => {
     const [img, setImg] = useState(NewLogo);

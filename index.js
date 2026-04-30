@@ -14,6 +14,7 @@ import AllBooks from "./components/AllBooks"
 import HeroPage from "./components/HeroPage"
 import { ClerkProvider } from '@clerk/clerk-react'
 import { dark } from '@clerk/themes'
+import NewNavBar from "./components/NewNavBar"
 
 // Import your Publishable Key
 const PUBLISHABLE_KEY = process.env.VITE_CLERK_PUBLISHABLE_KEY
@@ -36,7 +37,7 @@ const bookAppTheme = {
     
     // Primary buttons (sign in, continue, etc)
     formButtonPrimary: {
-      backgroundColor: "#d06832", // Gold/bronze color from your logo
+      backgroundColor: "#d06832", // Gold/bronze color from logo
       color: "#111",
       fontWeight: "600",
       borderRadius: "4px",

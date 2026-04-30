@@ -1,6 +1,6 @@
 import React from 'react'
 import "../styles/hero.css"
-import MainImg from "../files/main_img.svg"
+import MainImg from "url:../files/main_img.svg"
 import Buttons from './Buttons'
 import HeroTwo from './HeroTwo'
 import HeroThree from './HeroThree'

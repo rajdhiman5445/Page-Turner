@@ -1,4 +1,4 @@
-import load from "../files/shimmer_img.gif"
+import load from "url:../files/shimmer_img.gif"
 
 const Shimmer = ()=>{
     return(

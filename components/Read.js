@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState, useCallback } from 'react';
 import { ReactReader, ReactReaderStyle } from 'react-reader';
 import { useNavigate, useParams } from 'react-router-dom';
 import useLocalStorageState from 'use-local-storage-state';
-import Logo from "../files/page_turner_logo.svg";
+import Logo from "url:../files/page_turner_logo.svg";
 import { Link } from 'react-router-dom';
 
 function updateTheme(rendition, theme) {

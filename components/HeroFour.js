@@ -1,5 +1,5 @@
 import React from 'react'
-import img from "../files/size_img.svg"
+import img from "url:../files/size_img.svg"
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 import { ScrollTrigger } from 'gsap/all'
