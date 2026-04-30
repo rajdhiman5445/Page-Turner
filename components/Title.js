@@ -1,9 +1,9 @@
 import { useState } from "react";
-import Logo from "url:../files/page_turner_logo.svg"
-import LogoOrange from "url:../files/page_turner_logo_orange.svg"
+import Logo from "../files/page_turner_logo.svg"
+import LogoOrange from "../files/page_turner_logo_orange.svg"
 import { Link } from "react-router-dom";
-import NewLogo from "url:../files/plot_twist.svg"
-import NewLogoOrange from "url:../files/plot_twist_orange.svg"
+import NewLogo from "../files/plot_twist.svg"
+import NewLogoOrange from "../files/plot_twist_orange.svg"
 
 
 const Title =() => {

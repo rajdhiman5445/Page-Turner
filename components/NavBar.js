@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Title from "./Title";
-import Menu from "url:../files/menu.svg";
-import MenuOrange from "url:../files/menuorange.svg";
+import Menu from "../files/menu.svg";
+import MenuOrange from "../files/menuorange.svg";
 import { useState } from "react";
 import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/clerk-react';
 
